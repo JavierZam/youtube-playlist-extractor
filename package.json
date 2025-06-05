@@ -1,16 +1,40 @@
 {
   "name": "youtube-playlist-extractor",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Smart YouTube playlist extractor that uses Spotify API for accurate music metadata because YouTube metadata sucks",
+  "main": "youtube-spotify-hybrid.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node youtube-spotify-hybrid.js",
+    "extract": "node youtube-spotify-hybrid.js",
+    "test": "echo \"No tests specified yet\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "youtube",
+    "playlist",
+    "extractor",
+    "spotify",
+    "music",
+    "api",
+    "metadata",
+    "songs",
+    "artist",
+    "hybrid"
+  ],
+  "author": "Javier Zam",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.9.0",
     "dotenv": "^16.5.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JavierZam/youtube-playlist-extractor.git"
+  },
+  "homepage": "https://github.com/JavierZam/youtube-playlist-extractor#readme",
+  "bugs": {
+    "url": "https://github.com/JavierZam/youtube-playlist-extractor/issues"
   }
 }
